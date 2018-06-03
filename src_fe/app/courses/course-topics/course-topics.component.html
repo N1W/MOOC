@@ -1,0 +1,13 @@
+<div (mouseup)="saveToNB()">
+
+  <div id="myProgress">
+    <div id="myBar"
+         [style.width]="capacity + '%'"></div>
+  </div>
+
+  <app-course-item
+    *ngFor="let item of courses; let i = index"
+    [courses]="item"
+    [index]='i'>
+  </app-course-item>
+</div>

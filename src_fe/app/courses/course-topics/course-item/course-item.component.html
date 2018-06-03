@@ -1,0 +1,9 @@
+<div>
+  <div>
+    <h3 (click)="switchContent()">{{ courses.title }}</h3>
+    <span (click)="updateProgress()">{{progressBtnLabel}}(зис ис прогресс-баттон)</span>
+  </div>
+  <div>
+    <p [ngClass]="{'hidden': hide == true}">{{ courses.content }}</p>
+  </div>
+</div>
